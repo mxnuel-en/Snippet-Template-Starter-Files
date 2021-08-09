@@ -15,7 +15,7 @@ a:hover{
     border-bottom: 2px solid black;
 }
 .hero-section{
-    background-image: url("/Assets/Background.png");
+    background-image: url("Assets/Background.png");
 
     position: relative;
     padding: 20px;
@@ -93,6 +93,7 @@ footer{
 footer a{
     margin: 30px 20px 0 0;
 }
+<<<<<<< HEAD
 
 /* For Tablet devices */
 @media (min-width: 768px) {
@@ -166,3 +167,5 @@ footer a{
     }
 
 }
+=======
+>>>>>>> 3a5400827a6dc7d7ddb8109ddee25ef9159c09e3
