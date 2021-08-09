@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -14,39 +15,44 @@ a:hover{
     border-bottom: 2px solid black;
 }
 .hero-section{
-    background-image: url(/Assets/Background.png);
+    background-image: url("/Assets/Background.png");
+
     position: relative;
     padding: 20px;
-    height: 600px;
+    height: 650px;
 }
 nav{
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
 }
-.tablet-desktop{
+ul{
     display: none;
+}
+.logo{
+    cursor: pointer;
+}
+.hero-content{
+    text-align: center;
 }
 .hero-container h1{
     font-size: 3em;
-    text-align: center;
     line-height: 1.3em;
     padding: 0 50px;
     margin: 10px 0;
 }
 .hero-container p{
-    text-align: center;
     padding: 0 20px;
     color: #383838;
 }
 button{
     padding: 20px;
-    width: 335px;
     background-color: black;
     color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 button span{
     color: #AFB0B0;
@@ -54,6 +60,7 @@ button span{
 }
 .hero-container button{
     margin: 10px 0;
+    width: 355px;
 }
 .hero-container img{
     width: 335px;
@@ -85,4 +92,77 @@ footer{
 }
 footer a{
     margin: 30px 20px 0 0;
+}
+
+/* For Tablet devices */
+@media (min-width: 768px) {
+    .mobile{
+        display: none;
+    }
+    .hero-section{
+        padding: 20px 40px;
+        height: 700px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    ul li:nth-child(1), ul li:nth-child(2){
+        margin: 20px 15px;
+    }
+    ul button {
+        width: 200px;
+    }
+    .hero-container h1{
+        padding: 0 150px;
+        margin: 5px 0;
+    }
+    .hero-container p{
+        padding: 0 100px;
+    }
+    .hero-container img{
+        width: 688px;
+        position: absolute;
+        bottom: 0;
+    }
+    .info-section{
+        padding: 30px 40px;
+    }
+    .info-section img{
+        width: 688px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* For Desktop devices */
+@media (min-width: 1440px) {
+    .hero-section{
+        padding: 10px 150px;
+        height: 800px;
+    }
+    .hero-container p{
+        padding: 0 300px;
+    }
+    .hero-container img{
+        width: 1140px;
+    }
+    .info-section{
+        padding: 30px 150px;
+        clear: both;
+    }
+    .info-section img{
+        width: 500px;
+        float: right;
+    }
+    .info-content {
+        padding-top: 100px;
+    }
+    .info-section p{
+        padding-right: 150px;
+    }
+
 }
