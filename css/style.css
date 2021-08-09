@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #383838
+}
+a:hover{
+    border-bottom: 2px solid black;
+}
+.hero-section{
+    background-image: url(/Assets/Background.png);
+    position: relative;
+    padding: 20px;
+    height: 600px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.tablet-desktop{
+    display: none;
+}
+.hero-container h1{
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 0 50px;
+    margin: 10px 0;
+}
+.hero-container p{
+    text-align: center;
+    padding: 0 20px;
+    color: #383838;
+}
+button{
+    padding: 20px;
+    width: 335px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+button span{
+    color: #AFB0B0;
+    font-weight: lighter;
+}
+.hero-container button{
+    margin: 10px 0;
+}
+.hero-container img{
+    width: 335px;
+    position: absolute;
+    bottom: 0;
+}
+.info-section{
+    padding: 30px 20px;
+}
+.info-section img{
+    width: 335px;
+    margin: 30px 0;
+}
+.info-section h1{
+    font-size: 2em;
+    padding-right: 30px;
+    margin: 5px 0;
+}
+.info-section p{
+    color: #383838;
+    margin: 10px 0;
+}
+.info-section button{
+    width: 230px;
+    margin: 5px 0;
+}
+footer{
+    padding: 30px 20px;
+}
+footer a{
+    margin: 30px 20px 0 0;
+}
