@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -15,7 +15,7 @@ a:hover{
     border-bottom: 2px solid black;
 }
 .hero-section{
-    background-image: url("Assets/Background.png");
+    background-image: url("../Assets/Background.png");
 
     position: relative;
     padding: 20px;
@@ -30,6 +30,7 @@ ul{
     display: none;
 }
 .logo{
+    padding-bottom: 10px;
     cursor: pointer;
 }
 .hero-content{
@@ -44,6 +45,7 @@ ul{
 .hero-container p{
     padding: 0 20px;
     color: #383838;
+    line-height: 1.5em;
 }
 button{
     padding: 20px;
@@ -60,7 +62,7 @@ button span{
 }
 .hero-container button{
     margin: 10px 0;
-    width: 355px;
+    width: 335px;
 }
 .hero-container img{
     width: 335px;
@@ -71,7 +73,7 @@ button span{
     padding: 30px 20px;
 }
 .info-section img{
-    width: 335px;
+    width: 100%;
     margin: 30px 0;
 }
 .info-section h1{
@@ -82,18 +84,20 @@ button span{
 .info-section p{
     color: #383838;
     margin: 10px 0;
+    line-height: 1.5em;
 }
 .info-section button{
     width: 230px;
     margin: 5px 0;
 }
 footer{
-    padding: 30px 20px;
+    padding: 10px 20px 30px;
 }
-footer a{
-    margin: 30px 20px 0 0;
+footer p{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px 0;
 }
-<<<<<<< HEAD
 
 /* For Tablet devices */
 @media (min-width: 768px) {
@@ -124,18 +128,30 @@ footer a{
     }
     .hero-container img{
         width: 688px;
-        position: absolute;
-        bottom: 0;
     }
     .info-section{
         padding: 30px 40px;
     }
     .info-section img{
-        width: 688px;
+        width: 500px;
+        margin-left: 5%;
+    }
+    .info-section h1{
+        padding-right: 100px;
+    }
+    .info-section p{
+        padding-right: 30px;
     }
     footer{
         display: flex;
         justify-content: space-between;
+        padding: 20px 40px;
+    }
+    footer p{
+        padding-top: 10px;
+    }
+    footer p a:first-child{
+        padding-right: 20px;
     }
 }
 
@@ -153,19 +169,17 @@ footer a{
     }
     .info-section{
         padding: 30px 150px;
-        clear: both;
+        display: flex;
+        flex-direction: row-reverse;
     }
     .info-section img{
         width: 500px;
-        float: right;
     }
-    .info-content {
-        padding-top: 100px;
+    .info-content{
+        padding: 100px 50px 0 0;
     }
-    .info-section p{
-        padding-right: 150px;
+    footer{
+        padding: 30px 150px;
     }
 
 }
-=======
->>>>>>> 3a5400827a6dc7d7ddb8109ddee25ef9159c09e3
