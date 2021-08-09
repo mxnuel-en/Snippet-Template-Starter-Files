@@ -14,7 +14,7 @@ a:hover{
     border-bottom: 2px solid black;
 }
 .hero-section{
-    background-image: url(/Assets/Background.png);
+    background-image: url(Assets/Background.png);
     position: relative;
     padding: 20px;
     height: 600px;
